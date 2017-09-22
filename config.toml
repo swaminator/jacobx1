@@ -1,0 +1,54 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Jacob Schwind"
+theme = "purehugo"
+# Enable comments by entering your Disqus shortname
+#disqusShortname = "spf13"
+# Posts per page
+paginate = 10
+# Comment the themesDir option if you use this theme in production
+#themesDir = "../.."
+
+
+[params]
+	author = "Jacob Schwind"
+	description = "Tech Geek, etc"
+	keywords = ""
+	gravatar = "jacobx1@gmail.com"
+
+	hideShareOptions = true
+
+	headerText = "Welcome!"
+	# To add a header background to the main site, save your image under static/img/.
+	# If now image path is provided, a orange background will be shown instead.
+	headerImage = ""
+	copyright = "Released under the MIT license<br>Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)"
+
+	# Add your tracking code to enable Google Analytics
+	google_analytics = "UA-83944760-1"
+
+	[params.social]
+		# Insert your accout name and the icon will be shown in the right menu
+		rss = true
+		homepage = true
+		email = "jacobx1@gmail.com"
+		behance = ""
+		bitbucket  =""
+		dribbble = ""
+		facebook = ""
+		flickr = ""
+		github = "jacobx1"
+		googleplus = ""
+		instagram = ""
+		linkedin = ""
+		pinterest = ""
+		reddit = ""
+		soundcloud = ""
+		stackexchange = ""
+		steam = ""
+		tumblr = ""
+		twitter = "jacobx1"
+		wordpress = ""
+		youtube = ""
+		gitlab = ""
+		trello = ""
