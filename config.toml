@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://www.jacobx1.com/"
 languageCode = "en-us"
 title = "Jacob Schwind"
 theme = "purehugo"

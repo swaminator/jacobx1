@@ -43,6 +43,7 @@ To jump into Hugo development more quickly, you can simply fork and clone my blo
 1. Go to https://github.com/jacobx1/jacobx1 and click `fork` in the upper right-hand corner
 2. Clone either using `git clone` on the command line, or, if you have GitHub desktop installed, you can use the _"Open in Desktop"_ option from the _"Clone or download"_ dropdown on your fork, GitHub page.
    + This just gets you prepped to start making changes locally. Of course, for playing around, you can simply edit files on GitHub.com!
+   + ***Be sure to change the baseurl in config.toml to `/` or to your address (with trailing slash)***
 3. Go to https://app.netlify.com/ and click _"New site from Git"_
    + Choose _"GitHub"_
    + Pick the fork you created
