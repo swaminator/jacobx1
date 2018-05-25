@@ -13,7 +13,7 @@ categories:
 I recently purchased a Pebble Watch and, like any programming nerd would do, started writing software for it.
 
 <center>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/C_sQBtw5is8" frameborder="0" allowfullscreen></iframe>
+  <iframe width="100%" height="315" src="https://www.youtube.com/embed/C_sQBtw5is8" frameborder="0" allowfullscreen></iframe>
 </center>
 
 I do plan on releasing source at some point, but I thought it would be good to share some resources for those interested in either writing software for the Pebble watch or who want to work with their LG TV. 
