@@ -1,0 +1,48 @@
+@import "./_config.scss";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font;
+}
+
+a {
+  text-decoration: none;
+  color: $color-primary;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+
+/* LAYOUT CSS */
+.pure-img-responsive, .pure-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pure-button {
+  background: transparent;
+  border: 2px solid $color-button-border;
+  padding: .5em 1em;
+  border-radius: 2px;
+  font-size: 85%;
+
+  &:hover, &:focus {
+    border: 2px solid $color-primary;
+    text-decoration: none;
+  }
+}
+
+#layout {
+  display: grid;
+  min-height: 100vh;
+
+  @include break-at('small') {
+    grid-template-columns: 1fr 3fr;
+  }
+}

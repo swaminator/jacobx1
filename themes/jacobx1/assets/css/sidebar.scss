@@ -1,0 +1,53 @@
+@import "./_mixins.scss";
+
+.nav-item {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+
+  a {
+    color: $color-sidebar-foreground;
+    display: inline-block;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+
+.sidebar {
+  background: $color-sidebar-background;
+  color: $color-sidebar-foreground;
+}
+
+.header {
+  text-align: center;
+  padding: 1em;
+  margin: 3em auto;
+
+  @include break-at('small') {
+    margin: 80% 2em 0;
+    text-align: right;
+  }
+}
+
+.brand-title,
+.brand-tagline {
+  margin: 0;
+}
+.brand-title {
+  text-transform: uppercase;
+}
+
+.brand-title a {
+  color: inherit;
+}
+
+.brand-tagline {
+  font-weight: 300;
+  color: $color-accent;
+}
+
+.nav-list {
+  padding: 0;
+  margin: 0;
+}

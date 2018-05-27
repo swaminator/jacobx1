@@ -1,0 +1,13 @@
+@import "./_config.scss";
+
+@mixin break-at($breakpoint) {
+  @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: $breakpoint)) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Invalid breakpoint";
+  }
+}

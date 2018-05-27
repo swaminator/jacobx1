@@ -1,0 +1,21 @@
+@import "./_mixins.scss";
+
+.footer {
+  padding: 1em 0;
+
+  a {
+    color: $color-footer-link;
+    font-size: 80%;
+  }
+
+  .pure-menu {
+    a:hover,
+    a:focus {
+      background: none;
+    }
+  }
+
+  @include break-at('small') {
+    text-align: center;
+  }
+}

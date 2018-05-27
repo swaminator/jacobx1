@@ -1,0 +1,21 @@
+@import "./_config.scss";
+@import "./_mixins.scss";
+
+.content-subhead {
+  text-transform: uppercase;
+  color: $color-post-time;
+  border-bottom: 1px solid $color-post-time-underline;
+  padding: 0.4em 0;
+  font-size: 80%;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.content {
+  padding: 2em 1em 0;
+  font-size: 1em;
+
+  @include break-at('small') {
+    padding: 2em 3em 0;
+  }
+}

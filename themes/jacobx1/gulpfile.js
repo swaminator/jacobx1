@@ -10,7 +10,7 @@ gulp.task('compress', function() {
     .pipe(concat('all.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('static/js/'));
-  gulp.src('assets/css/**')
+  gulp.src('assets/css/blog.scss')
     .pipe(sass({
       includePaths: require('node-normalize-scss').includePaths
     }))

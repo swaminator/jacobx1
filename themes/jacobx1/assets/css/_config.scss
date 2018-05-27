@@ -1,0 +1,19 @@
+$breakpoints: (
+  'small': 48em
+) !default;
+
+$main-font: Arial, Helvetica, sans-serif;
+
+$color-primary: rgb(61, 146, 201);
+$color-accent: rgb(176, 202, 219);
+
+$color-post-time: #aaa;
+$color-post-time-underline: #eee;
+
+$color-footer-link: #ccc;
+
+$color-button-border: $color-accent;
+
+$color-sidebar-background: #000;
+$color-sidebar-foreground: #fff;
+
