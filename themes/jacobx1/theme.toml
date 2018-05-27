@@ -1,0 +1,11 @@
+name = "jacobx1"
+description = "A theme based on the pure css blog layout"
+license = "MIT"
+source_repo = "https://github.com/jacobx1/hugojacobx1"
+tags = ["blog", "purecss"]
+min_version = 0.14
+
+[author]
+    name = "jacobx1"
+    url = "http://jacobx1.com"
+

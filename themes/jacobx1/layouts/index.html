@@ -1,0 +1,56 @@
+{{ partial "header.html" . }}
+
+<div id="layout">
+  {{ partial "sidebar.html" . }}
+
+  <div class="content">
+    <div>
+      {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }} {{ range $paginator.Pages }}
+      <!-- A wrapper for all the blog posts -->
+      <div class="posts">
+        <h1 class="content-subhead">{{ .Date.Format "02 Jan 2006, 15:04" }}</h1>
+        <section class="post">
+          <header class="post-header">
+
+            <h2 class="post-title">
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h2>
+
+            <p class="post-meta">
+              {{ with .Params.author }} By
+              <strong class="post-author">{{ . }}</strong>
+              {{ end }} {{ if isset .Params "categories" }} under {{ $baseUrl := .Site.BaseURL }} {{ range .Params.categories }}
+              <a class="post-category post-category-{{ . }}" href="{{ $baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }} {{ end }}
+            </p>
+          </header>
+
+          {{ if .Truncated }}
+
+          <div class="post-description">
+            <p>{{ .Summary }}</p>
+          </div>
+
+          <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+          <div>
+            <a href="{{ .RelPermalink }}" class="pure-button">Read More</a>
+          </div>
+
+          {{ else }}
+
+          <div class="post-description">
+            <p>{{ .Content }}</p>
+          </div>
+
+          {{ end }}
+
+        </section>
+      </div>
+      {{ end }} {{ partial "pagination.html" . }} {{ partial "footer.html" . }}
+    </div>
+  </div>
+</div>
+
+{{ partial "analytics.html" . }}
+</body>
+
+</html>
