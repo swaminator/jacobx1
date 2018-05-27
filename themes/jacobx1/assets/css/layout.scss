@@ -1,6 +1,8 @@
 @import "./_config.scss";
 
-* {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -14,13 +16,15 @@ a {
   text-decoration: none;
   color: $color-primary;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     text-decoration: underline;
   }
 }
 
 /* LAYOUT CSS */
-.pure-img-responsive, .pure-img {
+.pure-img-responsive,
+.pure-img {
   max-width: 100%;
   height: auto;
 }
@@ -28,21 +32,26 @@ a {
 .pure-button {
   background: transparent;
   border: 2px solid $color-button-border;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   border-radius: 2px;
   font-size: 85%;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     border: 2px solid $color-primary;
     text-decoration: none;
   }
+}
+
+.post-list-pagination-item {
+  border: 0 !important;
 }
 
 #layout {
   display: grid;
   min-height: 100vh;
 
-  @include break-at('small') {
+  @include break-at("small") {
     grid-template-columns: 1fr 3fr;
   }
 }
